@@ -7,11 +7,9 @@ variable "module_dynamodb_hash_key" {
 }
 
 variable "aws_region_default" {
-	description = "Provider default aws region"
-	default = "us-east-1"
+	default = ""
 }
 
 variable "aws_region_ap_south" {
-	description = "Provider default aws region"
-	default = "ap-south-1"
+	default = ""
 }

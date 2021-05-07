@@ -1,0 +1,8 @@
+
+    
+	
+tag_key = 'target'
+tag_value = 'ansible_host'
+max_attempt = 10
+ec2_region = 'ap-south-1'
+ansible_gp = 'ok'

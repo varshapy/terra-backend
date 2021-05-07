@@ -1,6 +1,6 @@
 variable "aws_region_default" {
 	description = "Provider default aws region"
-	default = "ap-south-1"
+	default = "us-east-1"
 }
 
 variable "aws_region_ap_south" {

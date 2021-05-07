@@ -1,0 +1,36 @@
+locals {
+  service_name = "forum"
+  owner        = "Community Team"
+}
+
+resource "null_resource" "execute" {
+	connection {
+		type = "ssh"
+		user = "ubuntu"
+		ssh_key = file('')
+		host = self.public_id
+	}
+	
+	provisioner "file" {
+		source = "file/test.txt"
+		destination = "/home/ubuntu/copied.txt"
+	}
+}
+
+
+resource "null_resource" "execute1" {
+	connection {
+		type = "ssh"
+		user = "ubuntu"
+		ssh_key = file('')
+		host = self.public_id
+	}
+	
+	provisioner "file" {
+		source = "file/test.txt"
+		destination = "/home/ubuntu/copied.txt"
+	}
+}	
+data "aws_instance" "asd" {
+
+}	
