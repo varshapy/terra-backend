@@ -20,5 +20,5 @@ variable "dynamodb_table_name" {
 
 variable "dynamodb_hash_key" {
 	description = "Hash key can be any random string for hashing"
-	default = "lockkey"
+	default = "LockID"
 }
